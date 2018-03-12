@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eat Da Burger</title>
+    <link rel="icon" href="/assets/img/burger.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/burger_style.css">
+  </head>
+  <body>
+
+<div class="container">
+  <center>
+    <div class="row">
+      <img src="/assets/img/burger.jpg">
+    </div>
+  </center>
+
+  <center>
+    <h1 class+"red_font">Eat Da Burger!</h1>
+  </center>
+
+  <!-- content from index.handlebars -->
+  {{body}}
+  <form action="burger/create" method="post">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+
+      <!-- Burger Input Section -->
+      <div class="form-group col-md-6">
+        <center><label for="new_burger" class="red_font">Order a New Burger</label></center>
+        <textarea class="form-control" columns="8" rows="4" id="new_burger" name="name"></textarea>
+      </div>
+
+      <div class="col-md-3"></div>
+    </div>
+<center>
+  <button type="submit" id="submit-button" class="btn btn-dannger">Place an Order</button>
+</center>
+</form>
+</div>
+
+<!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
